@@ -4,15 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Playing with CSS Variables</title>
 </head>
 <body>
     <main>
-        <h1>Update CSS Varibles with <span class="hl">JS</span></h1>
+        <h1>Update CSS Variables with <span class="hl">JS</span></h1>
         <div class="controls">
-            <label for="spacing">Spacing:</label>
-            <input type="range" name="spacing" id="spacing">
+            
+            <label for="spacing">Spacing: </label>
+            <input type="range" name="spacing" id="spacing" min="10" max="200" value="10" data-sizing="px" data-name="Kunal" data-logo="Arya">
+            
+            <label for="blur">Blur: </label>
+            <input type="range" name="blur" id="blur" min="0" max="25" value="10" data-sizing="px">
+
+            <label for="base">Base Color: </label>
+            <input type="color" name="base" id="base" value="#ffc600">
         </div>
+
+        <img src="https://images.unsplash.com/photo-1658128234026-77c9d8047e35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
     </main>
 </body>
 </html>
